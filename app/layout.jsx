@@ -1,4 +1,6 @@
 import Link from 'next/link';
+/*Ruta absoluta */
+import Navigation from "@/components/Navigation"
 import './globals.css';
 
 export const metadata = {
@@ -9,25 +11,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="es_mx">
       <body>
-        <h1>Navegación</h1>
-        <ul>
-          <li>
-              <Link href='/'>Home</Link>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <Link href='/about'>About</Link>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <Link href='/services'>Services</Link>
-          </li>
-        </ul>
-        
+    
+        <Navigation/>
         {children}</body>
     </html>
   )
